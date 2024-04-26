@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getTweets()">
+
+    <nav>
+        <h1>Tweet Sentiment Analysis</h1>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <form id="tweetForm">
+                <label id="tweetLabel" for="tweet">Enter your tweet:</label><br>
+                <!-- Added ID to the label -->
+                <textarea id="tweet" name="tweet" rows="4" cols="50"></textarea><br>
+                <button type="submit">Analyze Sentiment</button>
+            </form>
+            <br>
+            <div id="percentage">
+                <div id="positivePercentage"></div>
+                <div id="negativePercentage"></div>
+            </div>
+
+            <div id="result"></div>
+            <div class="tweet-table">
+                <h2>Tweet History</h2>
+                <table id="tweetTable">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Tweet</th>
+                            <th>Sentiment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Tweet history rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <img src="logo1.png" alt="Image">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
