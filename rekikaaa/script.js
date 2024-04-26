@@ -68,7 +68,7 @@ function analyzeSentiment(tweet) {
 }
 
 const getTweets = () => {
-    fetch("http://192.168.2.193:8080/tweets").then((response) => response.json()).then((json) => {
+    fetch("http://ur IP address:8080/tweets").then((response) => response.json()).then((json) => {
         const total = json.length;
         negative = 0
         json.forEach((obj) => {
